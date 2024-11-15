@@ -9,7 +9,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest]
         dc: [ldc-master]
-        platform: [rp2040, rp2350-arm-s] # FIXME: rp2350-riscv - mbedtls no-entropy error
+        platform: [rp2040, rp2350-arm-s, rp2350-riscv]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
